@@ -3,7 +3,7 @@ import React from 'react';
 const HomePage = () => {
     return (
         <div>
-            <header className="bg-black text-white p-4 mt-16">
+            <header className="bg-black text-white p-4 mt-14">
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-4xl font-bold">Добро пожаловать в наш театр</h1>
                     <a href="/repertoire" className="text-lg hover:underline">Узнать больше</a>

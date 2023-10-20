@@ -37,7 +37,7 @@ const HomePage = () => {
     ];
 
     return (
-        <div className="font-your-font bbb h-screen mt-8">
+        <div className="font-your-font bbb h-auto md:h-screen mt-8">
             <section className="container mx-auto">
                 <div className="flex justify-center items-center gap-2">
                     <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">Грядущие</h2>
@@ -49,7 +49,7 @@ const HomePage = () => {
                             <img
                                 src={show.image}
                                 alt={show.title}
-                                className="hidden md:block w-full h-[420px] object-cover rounded-lg"
+                                className=" w-full h-[420px] object-cover rounded-lg"
                             />
                             <div className="flex justify-between ">
                                 <h3 className="text-xl font-semibold mt-4">{show.title}</h3>
@@ -57,7 +57,7 @@ const HomePage = () => {
                             </div>
 
                             <p className="mt-2">{show.text}</p>
-                            <div className="mt-4 text-center top-0 left-0 right-0">
+                            <div className="mt-4 text-center">
                                 <a href="https://www.ticket.kg/place/teatr-opery-i-baleta" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white">
                                     Купить билет
                                 </a>
@@ -71,5 +71,6 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
 
 
