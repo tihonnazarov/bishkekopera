@@ -14,7 +14,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage/>} />
                     <Route path="/repertoire" element={<Repertoire/>} />
-                    <Route path="/events-calendar" element={<Info/>}/>
+                    <Route path="/info" element={<Info/>}/>
                 </Routes>
             </div>
         </Router>

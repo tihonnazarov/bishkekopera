@@ -51,7 +51,7 @@ const NavBar = () => {
                         <a href="https://www.ticket.kg/place/teatr-opery-i-baleta" className="text-black hover:underline">{t('Buy tickets')}</a>
                     </li>
                     <li>
-                        <Link to="/events-calendar" className="text-black hover:underline">{t('Info')}</Link>
+                        <Link to="/info" className="text-black hover:underline">{t('Info')}</Link>
                     </li>
                     <li className="flex gap-1">
                         <button onClick={handleLanguageChange}>{t('')} {language === 'ru' ? t('Кыргызча') : t('Русский')}</button>
@@ -77,7 +77,7 @@ const NavBar = () => {
                             <a href="https://www.ticket.kg/place/teatr-opery-i-baleta" className="text-black hover:underline">{t('Buy tickets')}</a>
                         </li>
                         <li className="p-4 border-b border-black">
-                            <Link to="/events-calendar" onClick={handleNav} className="text-black hover:underline">{t('Info')}</Link>
+                            <Link to="/info" onClick={handleNav} className="text-black hover:underline">{t('Info')}</Link>
                         </li>
                         <li className="p-4 border-b border-black flex gap-1">
                             <button onClick={handleLanguageChange}>{t('')} {language === 'ru' ? t('Кыргызча') : t('Русский')}</button>
