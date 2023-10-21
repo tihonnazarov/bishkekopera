@@ -64,8 +64,8 @@ const NavBar = () => {
                     {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
 
                 </div>
-                <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 z-10" : "fixed left-[-100%] h-full ease-in-out duration-500"}>
-                    <h1 className="w-full text-black text-2xl font-bold m-4 w-2/3">{t('OPERA AND BALLET THEATER NAMED AFTER A. MALDIBAEVA')}</h1>
+                <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 z-10" : "fixed left-[-400%] h-full ease-in-out duration-500"}>
+                    <h1 className="md:w-full w-1/3 text-black text-2xl font-bold m-4 ">{t('OPERA AND BALLET THEATER NAMED AFTER A. MALDIBAEVA')}</h1>
                     <ul className="p-4 uppercase">
                         <li className="p-4 border-b border-black">
                             <Link to="/" className="text-black hover:underline">{t('Main')}</Link>
