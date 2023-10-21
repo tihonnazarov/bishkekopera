@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Components/HomePage';
-import RepertoirePage from './Components/RepertoirePage';
+import Repertoire from './Components/RepertoirePage';
 
-import EventsCalendarPage from './Components/EventsCalendarPage';
+import Info from './Components/InfoPage'
 import NavBar from './Components/NavBar';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
                 <NavBar />
                 <Routes>
                     <Route path="/" element={<HomePage/>} />
-                    <Route path="/repertoire" element={<RepertoirePage/>} />
-                    <Route path="/events-calendar" element={<EventsCalendarPage/>}/>
+                    <Route path="/repertoire" element={<Repertoire/>} />
+                    <Route path="/events-calendar" element={<Info/>}/>
                 </Routes>
             </div>
         </Router>

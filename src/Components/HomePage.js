@@ -1,5 +1,5 @@
 import React from 'react';
-import noch from '../assets/noch_v_teatre1695812989.jpg'
+import trndt from '../assets/trndt.jpg'
 import gala from '../assets/gala_koncert1697353125.jpg'
 import vecher from '../assets/vecher_pamyati_stalb1697635478.jpg'
 import konc from '../assets/koncert_strunnogo_kv1675348718.png'
@@ -7,10 +7,10 @@ const HomePage = () => {
     const showData = [
         {
             id: 1,
-            title: 'Ночь в театре',
-            image: noch,
-            text: 'Волшебную ночь, наполненную чарующими звуками классической музыки, гармонией, пластическими балетными формами и изысканными линиями подарят своим зрителям артисты Кыргызского национального академического театра оперы и балета имени А.Малдыбаева! Ждем всех горожан и гостей столицы на незабываемую "Ночь в театре".',
-            date: '22 Октября'
+            title: 'Загадка Турандот',
+            image: trndt,
+            text: 'Мюзикл по мотивам пьесы Карло Гоцци. Музыка Владимира Назарова',
+            date: '28-29 Октября'
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ const HomePage = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-white">
                     {showData.map((show) => (
-                        <div key={show.id} className="bg-black bg-opacity-60 p-4 border-black border">
+                        <div key={show.id} className="p-4">
                             <img
                                 src={show.image}
                                 alt={show.title}
