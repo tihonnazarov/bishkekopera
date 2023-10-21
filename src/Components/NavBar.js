@@ -68,16 +68,16 @@ const NavBar = () => {
                     <h1 className="md:w-full w-1/4 text-black text-xl md:text-xl font-bold m-4">{t('OPERA AND BALLET THEATER NAMED AFTER A. MALDIBAEVA')}</h1>
                     <ul className="p-4 uppercase">
                         <li className="p-4 border-b border-black">
-                            <Link to="/" className="text-black hover:underline">{t('Main')}</Link>
+                            <Link to="/" onClick={handleNav} className="text-black hover:underline">{t('Main')}</Link>
                         </li>
                         <li className="p-4 border-b border-black">
-                            <Link to="/repertoire" className="text-black hover:underline">Репертуар</Link>
+                            <Link to="/repertoire" onClick={handleNav} className="text-black hover:underline">Репертуар</Link>
                         </li>
                         <li className="p-4 border-b border-black">
                             <a href="https://www.ticket.kg/place/teatr-opery-i-baleta" className="text-black hover:underline">{t('Buy tickets')}</a>
                         </li>
                         <li className="p-4 border-b border-black">
-                            <Link to="/events-calendar" className="text-black hover:underline">{t('Info')}</Link>
+                            <Link to="/events-calendar" onClick={handleNav} className="text-black hover:underline">{t('Info')}</Link>
                         </li>
                         <li className="p-4 border-b border-black flex gap-1">
                             <button onClick={handleLanguageChange}>{t('')} {language === 'ru' ? t('Кыргызча') : t('Русский')}</button>
