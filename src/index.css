@@ -16,5 +16,6 @@ body{
 .bbb {
     background-image: url("./assets/1600x1200-ballo2.jpg");
     background-size: 1920px;
+    background-attachment: fixed;
 }
 

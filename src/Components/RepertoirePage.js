@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import EventGrid from './EventGrid'
 import ten from '../assets/1600x1200-dead-man2.jpg'
@@ -17,7 +17,7 @@ function Repertoire() {
             imageUrl: boheme,
             price: 1200,
         },
-        // Добавьте больше событий
+
     ];
 
     return (

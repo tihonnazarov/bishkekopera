@@ -31,7 +31,7 @@ const Info = () => {
                             <img src={theatre} alt="" className="w-[500px] md:w-[500px]"/>
                         </div>
                     </li>
-                    <li className="grid gap-6">
+                    <li className="grid gap-6 mb-10">
                         <h2 className="text-bold text-2xl">{t("Cltr")}</h2>
                         <p className="lg:w-3/4 mx-auto">{t("Theat")}</p>
                         <p className="lg:w-3/4 mx-auto">{t("Goto")}</p>
