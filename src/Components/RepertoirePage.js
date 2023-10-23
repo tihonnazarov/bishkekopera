@@ -18,7 +18,7 @@ function Repertoire() {
             title: 'Турандот',
             date: '12 ноября, 2023',
             imageUrl: ten,
-            price: 1500,
+            price: 1000,
         },
         {
             title: 'Травиата',
@@ -30,13 +30,13 @@ function Repertoire() {
             title: 'Айболит и бармолей',
             date: '14 ноября, 2023',
             imageUrl: sss,
-            price: 1200,
+            price: 500,
         },
         {
             title: 'Ночь в театре',
             date: '15 ноября, 2023',
             imageUrl: boheme,
-            price: 1200,
+            price: 1000,
         },
 
     ];
