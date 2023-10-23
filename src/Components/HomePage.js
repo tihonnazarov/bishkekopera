@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import trndt from '../assets/trndt.jpg'
 import gala from '../assets/gala_koncert1697353125.jpg'
 import vecher from '../assets/vecher_pamyati_stalb1697635478.jpg'
@@ -7,6 +7,10 @@ import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
 
 const HomePage = () => {
+    useEffect(() => {
+        // Прокрутить страницу в верхнюю часть при монтировании компонента
+        window.scrollTo(0, 0);
+    }, []);
     const {t} = useTranslation()
     const showData = [
         {

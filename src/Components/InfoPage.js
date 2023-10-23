@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import theatre from '../assets/theatre.jpg'
 import inside from '../assets/inside.png'
 import {useTranslation} from "react-i18next";
@@ -6,6 +6,10 @@ import {useTranslation} from "react-i18next";
 
 const Info = () => {
     const {t} = useTranslation()
+    useEffect(() => {
+        // Прокрутить страницу в верхнюю часть при монтировании компонента
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="mt-20 font-your-font">
             <div>

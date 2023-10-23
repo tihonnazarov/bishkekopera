@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 
 const TicketsPage = () => {
+    useEffect(() => {
+        // Прокрутить страницу в верхнюю часть при монтировании компонента
+        window.scrollTo(0, 0);
+    }, []);
     const {t} = useTranslation()
     return(
-        <div className="mt-10 bbb w-full h-screen md:p-52 p-4 mx-auto font-your-font">
+        <div className="mt-10 bbb w-full h-screen md:p-52 p-6 mx-auto font-your-font">
             <div className="grid grid-cols-1 gap-16 place-items-center">
                 <h1 className="text-2xl font-bold mb-8 text-center mt-8 text-white">{t("On")}</h1>
                 <div className="flex">

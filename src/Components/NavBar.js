@@ -36,8 +36,9 @@ const NavBar = () => {
     }
 
 
+
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white p-4 border-b border-black font-your-font">
+        <nav className="fixed top-0 left-0 right-0 bg-white p-4 border-b border-black font-your-font z-10">
             <div className="container mx-auto flex justify-between items-center">
                 <Link to="/" className="text-black text-[16px] md:text-xl font-bold hover:underline">{t('Operat')}</Link>
                 <ul className="hidden md:flex space-x-6 font-bold ">
@@ -51,7 +52,7 @@ const NavBar = () => {
                         <Link to="/tickets" className="text-black hover:underline">{t('Buy tickets')}</Link>
                     </li>
                     <li>
-                        <Link to="/info" className="text-black hover:underline">{t('Info')}</Link>
+                        <Link to="/info#top" className="text-black hover:underline">{t('Info')}</Link>
                     </li>
                     <li className="flex gap-1">
                         <button onClick={handleLanguageChange}>{t('')} {language === 'ru' ? t('Кыргызча') : t('Русский')}</button>

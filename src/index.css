@@ -18,4 +18,26 @@ body{
     background-size: 1920px;
     background-attachment: fixed;
 }
+.btt:hover {
+    background: rgba(76, 175, 80, 0);
+    color: white;
+}
+.bt:hover .btt {
+    opacity: 100%;
+}
+.bt:hover .p1 {
+    color: #01c001;
+}
+.bt:hover img {
+    opacity: 100%;
+}
+.btt {
+
+    color: black;
+    background: white;
+}
+
+
+
+
 

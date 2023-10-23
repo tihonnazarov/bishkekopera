@@ -8,6 +8,7 @@ import NavBar from './Components/NavBar';
 import Footer from './Components/Footer'
 import TicketsPage from "./Components/TicketsPage";
 function App() {
+
     return (
         <Router>
             <div>
