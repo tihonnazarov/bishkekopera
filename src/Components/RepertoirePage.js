@@ -10,7 +10,6 @@ import ddd from '../assets/theatre.jpg'
 
 function Repertoire() {
     useEffect(() => {
-        // Прокрутить страницу в верхнюю часть при монтировании компонента
         window.scrollTo(0, 0);
     }, []);
     const eventsData = [

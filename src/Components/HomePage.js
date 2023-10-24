@@ -8,7 +8,6 @@ import {Link} from "react-router-dom";
 
 const HomePage = () => {
     useEffect(() => {
-        // Прокрутить страницу в верхнюю часть при монтировании компонента
         window.scrollTo(0, 0);
     }, []);
     const {t} = useTranslation()

@@ -3,7 +3,6 @@ import {useTranslation} from "react-i18next";
 
 const TicketsPage = () => {
     useEffect(() => {
-        // Прокрутить страницу в верхнюю часть при монтировании компонента
         window.scrollTo(0, 0);
     }, []);
     const {t} = useTranslation()
