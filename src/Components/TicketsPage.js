@@ -7,7 +7,7 @@ const TicketsPage = () => {
     }, []);
     const {t} = useTranslation()
     return(
-        <div className="mt-10 bbb w-full h-screen md:p-52 p-6 mx-auto font-your-font">
+        <div className="mt-10 element w-full h-screen md:p-52 p-6 mx-auto font-your-font">
             <div className="grid grid-cols-1 gap-16 place-items-center">
                 <h1 className="text-2xl font-bold mb-8 text-center mt-8 text-white">{t("On")}</h1>
                 <div className="flex">
