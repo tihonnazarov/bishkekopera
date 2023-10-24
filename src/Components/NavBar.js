@@ -30,8 +30,8 @@ const NavBar = () => {
                     setLanguage('ru');
                 })
                 .catch((error) => {
-                    console.error('Ошибка смены языка:', error);
-                });
+                console.error('Ошибка смены языка:', error);
+            });
         }
     }
 

@@ -44,11 +44,8 @@ const HomePage = () => {
         },
 
     ];
-
-
     return (
         <div className="element">
-
             <div className="font-your-font bbb h-auto md:h-screen mt-8">
                     <section className="container mx-auto">
                         <div className="flex justify-center items-center gap-2">
