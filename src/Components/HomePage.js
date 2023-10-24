@@ -66,7 +66,7 @@ const HomePage = () => {
                                     <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
                                 </div>
 
-                                <p className="mt-2 font-bold">{show.text}</p>
+                                <p className="mt-2 font-semibold">{show.text}</p>
                                 <div className="mt-4 text-center">
                                     <Link to="/tickets" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
                                 </div>
