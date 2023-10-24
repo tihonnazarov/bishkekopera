@@ -61,12 +61,12 @@ const HomePage = () => {
                                     alt={show.title}
                                     className=" w-full h-[420px] object-cover rounded-lg"
                                 />
-                                <div className="flex justify-between">
+                                <div className="flex justify-between mb-6">
                                     <h3 className="text-xl font-semibold mt-4">{show.title}</h3>
                                     <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
                                 </div>
 
-                                <p className="mt-2">{show.text}</p>
+                                <p className="mt-2 font-bold">{show.text}</p>
                                 <div className="mt-4 text-center">
                                     <Link to="/tickets" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
                                 </div>

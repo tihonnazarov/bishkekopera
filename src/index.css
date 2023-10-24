@@ -15,6 +15,7 @@ body{
 }
 .element::before {
     content: "";
+    background-size: 1920px;
     background-image: url('./assets/1600x1200-ballo2.jpg');
     position: fixed;
     top: 0;
