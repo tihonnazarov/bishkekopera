@@ -11,6 +11,7 @@ const Info = () => {
     }, []);
     return (
         <div className="mt-20 font-your-font mb-10">
+
             <div>
                 <ul className="text-center mx-auto lg:w-3/4 grid gap-10">
                     <li className="grid gap-6">

@@ -11,6 +11,7 @@ const HomePage = () => {
         window.scrollTo(0, 0);
     }, []);
 
+
     const {t} = useTranslation()
     const showData = [
         {
@@ -46,35 +47,36 @@ const HomePage = () => {
 
 
     return (
-    <div className="element">
-        <div className="font-your-font bbb h-auto md:h-screen mt-8">
-                <section className="container mx-auto">
-                    <div className="flex justify-center items-center gap-2">
-                        <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">{t("Coming")}</h2>
-                        <p className="text-gray-400 mt-8 font-bold text-2xl">{t("Events")}</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 laptop:grid-cols-4 gap-6 text-white">
-                        {showData.map((show) => (
-                            <div key={show.id} className="p-4">
-                                <img
-                                    src={show.image}
-                                    alt={show.title}
-                                    className="md:text-center md:w-[400px] md:h-[450px] w-[210px] h-[280px] bg-cover rounded-lg mx-auto"
-                                />
-                                <div className="flex md:justify-between justify-center md:gap-1 gap-4">
-                                    <h3 className="text-xl font-semibold mt-4 w-50">{show.title}</h3>
-                                    <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
-                                </div>
-                                <div className="text-center mt-6">
-                                    <Link to="/tickets" className="w-40 bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
-                                </div>
-                            </div>
+        <div className="element">
 
-                        ))}
-                    </div>
-                </section>
+            <div className="font-your-font bbb h-auto md:h-screen mt-8">
+                    <section className="container mx-auto">
+                        <div className="flex justify-center items-center gap-2">
+                            <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">{t("Coming")}</h2>
+                            <p className="text-gray-400 mt-8 font-bold text-2xl">{t("Events")}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 laptop:grid-cols-4 gap-6 text-white">
+                            {showData.map((show) => (
+                                <div key={show.id} className="p-4">
+                                    <img
+                                        src={show.image}
+                                        alt={show.title}
+                                        className="md:text-center md:w-[400px] md:h-[450px] w-[210px] h-[280px] bg-cover rounded-lg mx-auto"
+                                    />
+                                    <div className="flex md:justify-between justify-center md:gap-1 gap-4">
+                                        <h3 className="text-xl font-semibold mt-4 w-50">{show.title}</h3>
+                                        <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
+                                    </div>
+                                    <div className="text-center mt-6">
+                                        <Link to="/tickets" className="w-40 bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
+                                    </div>
+                                </div>
+
+                            ))}
+                        </div>
+                    </section>
+                </div>
             </div>
-    </div>
     );
 };
 
