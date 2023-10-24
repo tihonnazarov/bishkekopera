@@ -53,7 +53,7 @@ const HomePage = () => {
                         <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">{t("Coming")}</h2>
                         <p className="text-gray-400 mt-8 font-bold text-2xl">{t("Events")}</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-white">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 laptop:grid-cols-4 gap-6 text-white">
                         {showData.map((show) => (
                             <div key={show.id} className="p-4">
                                 <img

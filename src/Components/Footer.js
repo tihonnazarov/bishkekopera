@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
     return(
-        <div className="bottom-0 left-0 right-0 bg-white p-4 border-t border-black font-your-font w-full">
+        <div className="relative bottom-0 left-0 right-0 bg-white p-4 border-t border-black font-your-font w-full">
             <div className="flex justify-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
