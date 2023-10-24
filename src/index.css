@@ -18,6 +18,11 @@ body{
     background-size: 1920px;
     background-attachment: fixed;
 }
+@media screen and (max-width: 767px){
+    .bbb {
+        background-attachment: fixed;
+    }
+}
 .btt:hover {
     background: rgba(76, 175, 80, 0);
     color: white;
