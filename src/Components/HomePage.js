@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import trndt from '../assets/trndt.jpg'
 import gala from '../assets/gala_koncert1697353125.jpg'
-import vecher from '../assets/vecher_pamyati_stalb1697635478.jpg'
-import konc from '../assets/koncert_strunnogo_kv1675348718.png'
+import vecher from '../assets/aybolit_i_barmaley.jpg'
+import konc from '../assets/lebedinoe_ozero.jpg'
 import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
 
@@ -29,14 +29,14 @@ const HomePage = () => {
         },
         {
             id: 3,
-            title: 'Вечер памяти Сталбека Алмасбекова',
+            title: 'Айболит и Бармалей',
             image: vecher,
             text: 'Вечер памяти выдающегося оперного певца, народного артиста КР Сталбека Алмасбекова, посвященный 70-летию со дня рождения',
             date: '26 Октября'
         },
         {
             id: 4,
-            title: 'Концерт струнного квартета симфонического оркестра',
+            title: 'Лебединое озеро',
             image: konc,
             text: 'Концерт струнного квартета симфонического оркестра Кыргызского национального академического театра оперы и балета имени А.Малдыбаева. Талантливые и виртуозные музыканты',
             date: '1 Ноября'
@@ -59,18 +59,17 @@ const HomePage = () => {
                                 <img
                                     src={show.image}
                                     alt={show.title}
-                                    className=" w-full h-[420px] object-cover rounded-lg"
+                                    className="md:text-center md:w-[400px] md:h-[450px] w-[210px] h-[280px] bg-cover rounded-lg mx-auto"
                                 />
-                                <div className="flex justify-between mb-6">
-                                    <h3 className="text-xl font-semibold mt-4">{show.title}</h3>
+                                <div className="flex md:justify-between justify-center md:gap-1 gap-4">
+                                    <h3 className="text-xl font-semibold mt-4 w-50">{show.title}</h3>
                                     <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
                                 </div>
-
-                                <p className="mt-2 font-semibold">{show.text}</p>
-                                <div className="mt-4 text-center">
-                                    <Link to="/tickets" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
+                                <div className="text-center mt-6">
+                                    <Link to="/tickets" className="w-40 bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
                                 </div>
                             </div>
+
                         ))}
                     </div>
                 </section>

@@ -14,7 +14,7 @@ function Repertoire() {
     }, []);
     const eventsData = [
         {
-            title: 'Турандот',
+            title: 'Загадка Турандот',
             date: '12 ноября, 2023',
             imageUrl: ten,
             price: 1000,
@@ -26,7 +26,7 @@ function Repertoire() {
             price: 1200,
         },
         {
-            title: 'Айболит и бармолей',
+            title: 'Айболит и Бармалей',
             date: '14 ноября, 2023',
             imageUrl: sss,
             price: 500,
