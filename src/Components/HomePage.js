@@ -10,6 +10,7 @@ const HomePage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
     const {t} = useTranslation()
     const showData = [
         {
@@ -45,34 +46,36 @@ const HomePage = () => {
 
 
     return (
+    <div className="element">
         <div className="font-your-font bbb h-auto md:h-screen mt-8">
-            <section className="container mx-auto">
-                <div className="flex justify-center items-center gap-2">
-                    <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">{t("Coming")}</h2>
-                    <p className="text-gray-400 mt-8 font-bold text-2xl">{t("Events")}</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-white">
-                    {showData.map((show) => (
-                        <div key={show.id} className="p-4">
-                            <img
-                                src={show.image}
-                                alt={show.title}
-                                className=" w-full h-[420px] object-cover rounded-lg"
-                            />
-                            <div className="flex justify-between">
-                                <h3 className="text-xl font-semibold mt-4">{show.title}</h3>
-                                <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
-                            </div>
+                <section className="container mx-auto">
+                    <div className="flex justify-center items-center gap-2">
+                        <h2 className="text-2xl font-bold mb-8 text-center mt-16 text-white">{t("Coming")}</h2>
+                        <p className="text-gray-400 mt-8 font-bold text-2xl">{t("Events")}</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-white">
+                        {showData.map((show) => (
+                            <div key={show.id} className="p-4">
+                                <img
+                                    src={show.image}
+                                    alt={show.title}
+                                    className=" w-full h-[420px] object-cover rounded-lg"
+                                />
+                                <div className="flex justify-between">
+                                    <h3 className="text-xl font-semibold mt-4">{show.title}</h3>
+                                    <h3 className="text-xl font-semibold mt-4 whitespace-nowrap">{show.date}</h3>
+                                </div>
 
-                            <p className="mt-2">{show.text}</p>
-                            <div className="mt-4 text-center">
-                                <Link to="/tickets" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
+                                <p className="mt-2">{show.text}</p>
+                                <div className="mt-4 text-center">
+                                    <Link to="/tickets" className="bg-white text-black hover:bg-black hover:bg-opacity-40 hover:text-white duration-300 px-4 py-2 rounded border border-white font-bold">{t('Buy')}</Link>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </div>
+                        ))}
+                    </div>
+                </section>
+            </div>
+    </div>
     );
 };
 

@@ -13,19 +13,15 @@ body{
 .font-your-font {
     font-family: 'georgia', sans-serif;
 }
-.bbb {
-    background-image: url("./assets/1600x1200-ballo2.jpg");
-    background-size: 1920px;
-    background-attachment: fixed;
-    -webkit-background-size: 1920px;
-    -moz-background-size: 1920px;
-    -o-background-size: 1920px;
-}
-@media screen and (max-width: 767px){
-    .bbb {
-        overflow-y: scroll;
-        background-size: 1920px;
-    }
+.element::before {
+    content: "";
+    background-image: url('./assets/1600x1200-ballo2.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .btt:hover {
     background: rgba(76, 175, 80, 0);
