@@ -17,10 +17,13 @@ body{
     background-image: url("./assets/1600x1200-ballo2.jpg");
     background-size: 1920px;
     background-attachment: fixed;
+    -webkit-background-size: 1920px;
+    -moz-background-size: 1920px;
+    -o-background-size: 1920px;
 }
 @media screen and (max-width: 767px){
     .bbb {
-        background-attachment: fixed;
+        background-size: 1920px;
     }
 }
 .btt:hover {
