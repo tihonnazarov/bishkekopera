@@ -41,7 +41,7 @@ function Repertoire() {
     ];
 
     return (
-        <div className="container mx-auto mt-20 pb-4">
+        <div className="container mx-auto mt-20 pb-4 mb-16">
             <h1 className="text-3xl font-semibold mb-4 text-center border-b border-gray-300 p-8 font-your-font">Репертуар</h1>
             <EventGrid events={eventsData} />
         </div>
